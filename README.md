@@ -2,7 +2,7 @@
 
 Sistema completo de detección de anomalías en tiempo real para variables de proceso industrial utilizando **Facebook Prophet**. El sistema está diseñado para integrarse con SQL Server y proporcionar detección continua de anomalías.
 
-## 🎯 Características Principales
+## Características Principales
 
 - **Detección en Tiempo Real**: Procesamiento continuo de datos nuevos
 - **Modelos Prophet**: Un modelo por variable con estacionalidad diaria y semanal
@@ -11,7 +11,7 @@ Sistema completo de detección de anomalías en tiempo real para variables de pr
 - **Dashboard Streamlit**: Guía completa para desarrolladores front-end
 - **Métricas de Evaluación**: Sistema completo de evaluación de modelos
 
-## 📋 Tabla de Contenidos
+## Tabla de Contenidos
 
 - [Arquitectura](#arquitectura)
 - [Instalación](#instalación)
@@ -20,7 +20,7 @@ Sistema completo de detección de anomalías en tiempo real para variables de pr
 - [Documentación](#documentación)
 - [Estructura del Proyecto](#estructura-del-proyecto)
 
-## 🏗️ Arquitectura
+## Arquitectura
 
 El sistema utiliza una arquitectura en capas:
 
@@ -46,7 +46,7 @@ El sistema utiliza una arquitectura en capas:
 
 Para más detalles, ver [ARQUITECTURA.md](ARQUITECTURA.md)
 
-## 🚀 Instalación
+## Instalación
 
 ### Requisitos
 
@@ -73,7 +73,7 @@ pip install -r requirements_streamlit.txt
 - `streamlit>=1.28.0` - Dashboard (opcional)
 - `plotly>=5.17.0` - Visualizaciones (opcional)
 
-## ⚙️ Configuración
+## Configuración
 
 ### Configuración de Base de Datos
 
@@ -113,7 +113,7 @@ SQL_CONFIG_OUTPUT = {
 }
 ```
 
-## 🎮 Uso Rápido
+## Uso Rápido
 
 ### 1. Entrenar Modelos
 
@@ -147,14 +147,14 @@ python evaluar_modelo.py
 streamlit run guia_frontend_streamlit.py
 ```
 
-## 📚 Documentación
+## Documentación
 
 - **[ARQUITECTURA.md](ARQUITECTURA.md)**: Arquitectura completa del sistema
 - **[README_SQL.md](README_SQL.md)**: Guía de integración con SQL Server
 - **[README_WORKER.md](README_WORKER.md)**: Documentación de workers
 - **[README_TIEMPO_REAL.md](README_TIEMPO_REAL.md)**: Procesamiento en tiempo real
 
-## 📁 Estructura del Proyecto
+## Estructura del Proyecto
 
 ```
 ypf_anomalies_detector/
@@ -178,7 +178,7 @@ ypf_anomalies_detector/
 └── README.md                              # Este archivo
 ```
 
-## 🔧 Componentes Principales
+## Componentes Principales
 
 ### ProphetAnomalyDetector
 
@@ -216,7 +216,7 @@ df = conn.execute_query("SELECT * FROM tabla")
 conn.write_dataframe(df, "tabla")
 ```
 
-## 📊 Resultados
+## Resultados
 
 El sistema genera los siguientes campos:
 
@@ -229,7 +229,7 @@ El sistema genera los siguientes campos:
 - `variable`: Nombre de la variable
 - `residual`: Diferencia entre real y predicho
 
-## 🔄 Flujo de Trabajo
+## Flujo de Trabajo
 
 ### Modo Batch
 
@@ -246,7 +246,7 @@ El sistema genera los siguientes campos:
 3. Escribe resultados inmediatamente
 4. Actualiza último datetime procesado
 
-## 🎨 Dashboard Streamlit
+## Dashboard Streamlit
 
 El dashboard `guia_frontend_streamlit.py` proporciona:
 
@@ -260,7 +260,7 @@ Ejecutar:
 streamlit run guia_frontend_streamlit.py
 ```
 
-## 📈 Métricas del Modelo
+## Métricas del Modelo
 
 El sistema incluye evaluación completa:
 
@@ -274,11 +274,11 @@ Ejecutar evaluación:
 python evaluar_modelo.py
 ```
 
-## 🔐 Seguridad
+## Seguridad
 
-⚠️ **Importante**: No subir credenciales a Git. Usa variables de entorno o archivos de configuración locales (no versionados).
+**Importante**: No subir credenciales a Git. Usa variables de entorno o archivos de configuración locales (no versionados).
 
-## 🤝 Contribución
+## Contribución
 
 1. Fork el proyecto
 2. Crea una rama para tu feature (`git checkout -b feature/AmazingFeature`)
@@ -286,15 +286,15 @@ python evaluar_modelo.py
 4. Push a la rama (`git push origin feature/AmazingFeature`)
 5. Abre un Pull Request
 
-## 📝 Licencia
+## Licencia
 
 Este proyecto es privado y confidencial.
 
-## 👤 Autor
+## Autor
 
 Andrés Ríos
 
-## 🙏 Agradecimientos
+## Agradecimientos
 
 - Facebook Prophet para el modelo de series temporales
 - Comunidad de Python para las librerías utilizadas
